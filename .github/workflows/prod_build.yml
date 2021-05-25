@@ -7,7 +7,7 @@ on:
   pull_request:
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -21,5 +21,6 @@ jobs:
           hugo-version: '0.78.2'
           extended: true
 
-      - name: Build
-        run: hugo --minify -b https://qr.swisscovid.ch
+      - name: Build Prod
+        run: hugo -b https://qr.swisscovid.ch -d build_prod --cleanDestinationDir --minify
+        run: cp -R .well-known/prod/.well-known build_prod
