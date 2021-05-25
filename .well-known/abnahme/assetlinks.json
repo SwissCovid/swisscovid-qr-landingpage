@@ -1,0 +1,13 @@
+[
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "ch.admin.bag.dp3t.abnahme",
+            "sha256_cert_fingerprints": [
+                "B2:B9:E6:E6:C6:B3:23:DF:62:4C:E5:F6:2C:9C:13:26:87:1B:80:82:C8:CE:0C:07:32:A0:0C:69:84:C6:0A:6C",
+                "E2:B0:8D:B7:4B:DC:FB:B3:09:27:6E:E2:5F:F7:97:23:FF:B4:49:2B:57:C3:C0:75:B0:E1:BF:F3:3B:9E:39:D9"
+            ]
+        }
+    }
+]

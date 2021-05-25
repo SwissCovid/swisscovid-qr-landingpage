@@ -1,0 +1,14 @@
+{
+	"applinks": {
+		"details": [{
+			"appIDs": ["XPL89PTG92.ch.admin.bag.dp3t.swisscovid.test"],
+			"components": [{
+				"/": "/",
+				"comment": "Matches CheckIn urls URLs (https://qr-t.swisscovid.ch/#xyz)"
+			}]
+		}]
+	},
+	"appclips": {
+		"apps": ["XPL89PTG92.ch.admin.bag.dp3t.swisscovid.test.Clip"]
+	}
+}
