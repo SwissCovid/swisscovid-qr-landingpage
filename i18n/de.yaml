@@ -1,8 +1,4 @@
-landing_app_name: 
+app_name: 
     other: "SwissCovid"
-landing_tagline: 
+web_slogan: 
     other: "Bei einem Ansteckungsrisiko schnell informiert."
-landing_appstore_link: 
-    other: "https://apps.apple.com/ch/app/swisscovid/id1509275381"
-landing_playstore_link: 
-    other: "https://play.google.com/store/apps/details?id=ch.admin.bag.dp3t"

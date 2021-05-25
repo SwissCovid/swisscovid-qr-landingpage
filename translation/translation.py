@@ -44,13 +44,18 @@ def loadLanguage( language, projectID, localesFolder, api_token  ):
 
     results = json.loads(data)    # obj now contains a dict of the data
 
+    relevant_terms = [
+        'app_name',
+        'web_slogan'
+    ]
+
     if results['response']['code'] == '200':
         # Open file
         fo = open(localesFolder+"/"+language+".yaml", "wb")
 
         n_terms = 0
         for translation in results['list']:
-            if translation['definition']['form'] == "" or not translation['term'].startswith('landing'):
+            if translation['definition']['form'] == "" or not translation['term'] in relevant_terms:
                 continue
             n_terms += 1
             lineUtf8 = (translation['term'] + ": \n    other: \"" + translation['definition']['form'].replace('\\','\\\\').replace('\n', '\\n') + "\"\n").encode('UTF-8')
