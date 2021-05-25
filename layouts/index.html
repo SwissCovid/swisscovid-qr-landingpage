@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div id="landingpage" class="row">
+    <img src="images/logo.svg" id="landing-logo" alt="">
+    <h1 id="landing-title">{{ T "landing_app_name" }}</span></h1>
+    <p id="landing-description">
+        {{ T "landing_tagline" }}
+    </p>
+    <div id="store-icons" class="row">
+        <div>
+            <a href="{{ T "landing_appstore_link" }}">
+                <img src="images/app-store.svg" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="{{ T "landing_playstore_link" }}">
+                <img src="images/play-store.svg" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+{{ end }}

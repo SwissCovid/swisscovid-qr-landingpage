@@ -1,0 +1,20 @@
+# vs code
+.vscode/
+
+# build directories
+public/
+build_*/
+
+# resource cache
+resources/
+
+# node modules
+node_modules/
+
+# logs
+*.log
+
+# python
+venv/
+*.pyc
+secrets.py

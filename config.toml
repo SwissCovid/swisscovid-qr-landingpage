@@ -1,0 +1,52 @@
+languageCode = "de"
+title = "SwissCovid"
+
+defaultContentLanguage = "de"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+  description = "Get the App | SwissCovid"
+
+[languages]
+  [languages.de]
+    weight = 1
+    languageName = "Deutsch"
+  [languages.en]
+    weight = 2
+    languageName = "English"
+  [languages.fr]
+    weight = 3
+    languageName = "Francais"
+  [languages.it]
+    weight = 4
+    languageName = "Italiano"
+  [languages.rm]
+    weight = 5
+    languageName = "Romansh"
+  [languages.es]
+    weight = 6
+    languageName = "Espagnol"
+  [languages.pt]
+    weight = 7
+    languageName = "Portugues"
+  [languages.sq]
+    weight = 8
+    languageName = "Albanisch"
+  [languages.sr]
+    weight = 9
+    languageName = "Serbisch"
+  [languages.bs]
+    weight = 10
+    languageName = "Bosnisch"  
+  [languages.hr]
+    weight = 11
+    languageName = "Kroatisch"
+  [languages.ti]
+    weight = 12
+    languageName = "Tigrinya"
+  [languages.tr]
+    weight = 13
+    languageName = "Türkisch"
+
+[markup.goldmark.renderer]
+  unsafe= true
