@@ -34,3 +34,10 @@ jobs:
           cp -R .well-known/dev/.well-known build_dev
           cp -R .well-known/test/.well-known build_test
           cp -R .well-known/abnahme/.well-known build_abnahme
+
+      - name: Zip Build Directories
+        run: |
+          (cd build_prod && zip -r ../prod.zip .)
+          (cd build_dev && zip -r ../dev.zip .)
+          (cd build_test && zip -r ../test.zip .)
+          (cd build_abnahme && zip -r ../abnahme.zip .)
