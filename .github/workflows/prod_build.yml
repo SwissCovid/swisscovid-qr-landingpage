@@ -21,6 +21,16 @@ jobs:
           hugo-version: '0.78.2'
           extended: true
 
-      - name: Build Prod
-        run: hugo -b https://qr.swisscovid.ch -d build_prod --cleanDestinationDir --minify
-        run: cp -R .well-known/prod/.well-known build_prod
+      - name: Build
+        run: |
+          hugo -b https://qr.swisscovid.ch -d build_prod --cleanDestinationDir --minify
+          hugo -b https://qr-d.swisscovid.ch -d build_dev --cleanDestinationDir --minify
+          hugo -b https://qr-t.swisscovid.ch -d build_test --cleanDestinationDir --minify
+          hugo -b https://qr-a.swisscovid.ch -d build_abnahme --cleanDestinationDir --minify
+        
+      - name: Copy .well-known
+        run: |
+          cp -R .well-known/prod/.well-known build_prod
+          cp -R .well-known/dev/.well-known build_dev
+          cp -R .well-known/test/.well-known build_test
+          cp -R .well-known/abnahme/.well-known build_abnahme
