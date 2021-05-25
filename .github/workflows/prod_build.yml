@@ -1,10 +1,9 @@
-name: prod build
+name: Tagged Release
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
+    tags:
+      - "v*"
 
 jobs:
   build:
@@ -41,3 +40,14 @@ jobs:
           (cd build_dev && zip -r ../dev.zip .)
           (cd build_test && zip -r ../test.zip .)
           (cd build_abnahme && zip -r ../abnahme.zip .)
+
+      - name: "Create new release"
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          files: |
+            prod.zip
+            dev.zip
+            test.zip
+            abnahme.zip
