@@ -22,10 +22,10 @@
         };
     </script>
 
-    {{/* $main := resources.Get (printf "js/dist/%s.min.js" $.Site.Params.PageVariant) | fingerprint */}}
-    {{/* <script
+    {{ $main := resources.Get "js/main.js" | js.Build (dict "minify" true "target" "es5") }}
+    <script
         type="text/javascript"
         src="{{ $main.Permalink }}"
         integrity="{{ $main.Data.Integrity }}"
-    ></script> */}}
+    ></script>
 </head>
