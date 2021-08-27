@@ -25,12 +25,15 @@
 
     <script>
         window.currentLanguage = {
+            shortcode: "{{ .Site.Language.Lang }}",
             appStoreLink: '{{ T "landing_appstore_link" }}',
             playStoreLink: '{{ T "landing_playstore_link" }}',
+            downloadPdf: '{{ T "web_generator_download_pdf" }}'
         };
     </script>
 
-    {{ $main := resources.Get "js/main.js" | js.Build (dict "minify" true "target" "es5") }}
+    {{ $main := resources.Get "js/main.js" | js.Build (dict "minify" true "target" "es5") | fingerprint}}
+
     <script
         type="text/javascript"
         src="{{ $main.Permalink }}"

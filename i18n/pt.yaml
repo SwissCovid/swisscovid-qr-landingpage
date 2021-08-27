@@ -1,4 +1,6 @@
 app_name: 
     other: "SwissCovid"
+web_generator_title_placeholder: 
+    other: "p. ex. sala ou nome do evento"
 web_slogan: 
     other: "Informação rápida em caso de risco de infeção"

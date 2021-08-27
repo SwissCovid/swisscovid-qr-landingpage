@@ -1,4 +1,6 @@
 app_name: 
     other: "SwissCovid"
+web_generator_title_placeholder: 
+    other: "npr. soba ili naziv događaja"
 web_slogan: 
     other: "Brze informacije u slučaju rizika od zaraze. "

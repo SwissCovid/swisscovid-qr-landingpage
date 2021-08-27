@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{ $qrgenerator := resources.Get "js/dist/qrgenerator.min.js" | fingerprint }}
+<script src="{{ $qrgenerator.RelPermalink }}" integrity="{{ $qrgenerator.Data.Integrity }}"></script>
+<div id="qrgenerator" class="row">
+    <div id="generator-card" class="card white">
+        <div class="card-content">
+            <h1>{{ T "web_generator_title" }}</h1>
+            <form id="qr-form">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="{{ T "web_generator_title_placeholder" }}" name="title" id="title" type="text"
+                            class="validate" required maxlength="50">
+                        <span class="helper-text" data-error="{{ T "web_generator_missing_input" }}"></span>
+                    </div>
+                </div>
+            </form>
+            <div class="btn-row row">
+                <a id="generate-qr-btn">
+                    {{ T "web_generator_button" }}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="qr-code" class="row">
+
+
+</div>
+{{ end }}

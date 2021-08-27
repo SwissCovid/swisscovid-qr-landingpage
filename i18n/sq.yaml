@@ -1,4 +1,6 @@
 app_name: 
     other: "SwissCovid"
+web_generator_title_placeholder: 
+    other: "p.sh. Hapësira ose emri për rastin"
 web_slogan: 
     other: "Në rastin e një rreziku të infektimit informoheni shpejt."

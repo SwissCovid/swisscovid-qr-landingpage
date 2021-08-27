@@ -1,4 +1,12 @@
 app_name: 
     other: "SwissCovid"
+web_generator_title_placeholder: 
+    other: "z.B. Raum oder Anlassname"
 web_slogan: 
     other: "Bei einem Ansteckungsrisiko schnell informiert."
+web_generator_title: 
+    other: "QR-Code erstellen"
+web_generator_button: 
+    other: "QR-Code erstellen"
+web_generator_download_pdf: 
+    other: "Download PDF"

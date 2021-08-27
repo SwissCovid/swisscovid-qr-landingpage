@@ -1,4 +1,6 @@
 app_name: 
     other: "SwissCovid"
+web_generator_title_placeholder: 
+    other: "Örn. Oda veya etkinlik adı"
 web_slogan: 
     other: "Bir bulaş riski durumunda hızlıca bilgi sahibi olun."

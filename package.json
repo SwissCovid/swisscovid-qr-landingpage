@@ -1,0 +1,42 @@
+{
+    "name": "swisscovid-qr-landingpage",
+    "version": "1.0.0",
+    "repository": "git@github.com:SwissCovid/swisscovid-qr-landingpage.git",
+    "author": "",
+    "private": true,
+    "scripts": {
+        "build:prod:js": "webpack --config webpack.prod.js --env BASE_URL='https://qr.swisscovid.ch?v=4' --env PUBLIC_KEY='980a1f34318e29c99526de1fa3b916aeebc545e7b68348ab01f21d8c7e8417277abc763fb936fa65739ff5e155cd35048992c32cbf90db0f246643ec716c978b75f9f73baa788db9aa5a0e17eb28c07a35ffe1e21fb67fe0238e034df49a6f09' --env GIT_INFO=\"$(git log -1 --format='%h, %ad' --date=format:'%d.%m.%Y, %H:%M')\"",
+        "build:abn:js": "webpack --config webpack.abn.js --env BASE_URL='https://qr-a.swisscovid.ch?v=4' --env PUBLIC_KEY='4479384cef796159e2856b824959db437a30f8070ef815d9f5c69678efc63fba3ebc48a8c095d390a49401fefb9f8a009b3b210ef1552e4405b00ef625f05c682f104884fda3093cded9c3bb0a54b837c582206afca5ea700d947316889e6412' --env GIT_INFO=\"$(git log -1 --format='%h, %ad' --date=format:'%d.%m.%Y, %H:%M')\"",
+        "build:dev:js": "webpack --config webpack.dev.js --env BASE_URL='https://qr-d.swisscovid.ch?v=4' --env PUBLIC_KEY='956e6fa1345547e8e060c8962ddd38863bf2c85406ed03b204bc340fb5db01296a960d00be240caa08db001664f4f7028a9dbbb33aea172bffd58b4a644f1ecb3b7bbed378a8a7c9756ac8b4b47346d8dbf37a62377703b7fc8da3bb22a21415' --env GIT_INFO=\"$(git log -1 --format='%h, %ad' --date=format:'%d.%m.%Y, %H:%M')\"",
+        "watch:js": "webpack --config webpack.dev.js --watch --env BASE_URL='https://qr-d.swisscovid.ch?v=4' --env PUBLIC_KEY='956e6fa1345547e8e060c8962ddd38863bf2c85406ed03b204bc340fb5db01296a960d00be240caa08db001664f4f7028a9dbbb33aea172bffd58b4a644f1ecb3b7bbed378a8a7c9756ac8b4b47346d8dbf37a62377703b7fc8da3bb22a21415' --env GIT_INFO=\"$(git log -1 --format='%h, %ad' --date=format:'%d.%m.%Y, %H:%M')\""
+    },
+    "dependencies": {
+        "@pdf-lib/fontkit": "^1.1.0",
+        "materialize-css": "^1.0.0",
+        "path-browserify": "^1.0.1",
+        "libsodium-sumo": "^0.7.8",
+        "libsodium-wrappers-sumo": "^0.7.8",
+        "pdf-lib": "^1.12.0",
+        "process": "^0.11.10",
+        "protobufjs": "^6.10.2",
+        "qrcode": "^1.4.4",
+        "stream-browserify": "^3.0.0",
+        "strftime": "^0.10.0",
+        "buffer": "^6.0.3"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.0",
+        "babel-loader": "^8.1.0",
+        "babel-polyfill": "^6.26.0",
+        "core-js": "3",
+        "crypto-browserify": "^3.12.0",
+        "css-loader": "^5.0.1",
+        "exports-loader": "^0.7.0",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.3.2",
+        "webpack-cli": "^4.1.0",
+        "buffer": "^6.0.3"
+    }
+}

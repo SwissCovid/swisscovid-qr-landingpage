@@ -1,4 +1,6 @@
 app_name: 
     other: "SwissCovid"
+web_generator_title_placeholder: 
+    other: "p.ex. stanza u num da l'occurrenza"
 web_slogan: 
     other: "Infurmescha svelt en cas d'ina ristga d'infecziun"

@@ -1,0 +1,75 @@
+#qrcodes,
+#qrgenerator {
+    padding-bottom: 145px;
+
+    @media screen and (max-width: $large) {
+        padding-bottom: 56px;
+    }
+}
+
+#qrgenerator, #qr-code {
+    position: relative;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 0;
+
+    #generator-card {
+        margin: 77px auto 0 auto;
+
+        .card-content {
+            padding: 49px 14px 24px 14px;
+
+            .input-field:not(:first-child):not(.no-label) {
+                margin-top: 16px;
+            }
+
+            .input-field.optional:not(:last-child) {
+                margin-bottom: 18px;
+            }
+
+            .btn-row {
+                margin-top: 26px;
+            }
+
+            #qr-form {
+                margin-top: 50px;
+            }
+
+            #generate-qr-btn {
+                cursor: pointer;
+            }
+
+            #validity-information {
+                display: flex;
+
+                background-color: #fdedf0;
+                border-radius: 15px;
+                padding: 5px;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 10px;
+                    margin-top: 7px;
+                }
+
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.1px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $mobile) {
+        #generator-card {
+            margin-top: 43px;
+        }
+    }
+}

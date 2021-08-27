@@ -1,4 +1,6 @@
 app_name: 
     other: "SwissCovid"
+web_generator_title_placeholder: 
+    other: "p. es. locale o nome dell'evento"
 web_slogan: 
     other: "Informazione rapida in caso di rischio di contagio"
