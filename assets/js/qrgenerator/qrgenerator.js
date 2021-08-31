@@ -26,7 +26,7 @@ const generateQRCode = async (qrButton) => {
     
     const pdfBuffon = document.getElementById("download-pdf-btn");
     pdfBuffon.href = window.URL.createObjectURL(blob);
-    pdfBuffon.download = "file.pdf"
+    pdfBuffon.download = `${data.title}.pdf`
     
     const printBuffon = document.getElementById("print-pdf-btn");
     printBuffon.onclick = () => {
