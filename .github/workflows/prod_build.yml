@@ -35,11 +35,12 @@ jobs:
 
       - name: Build
         run: |
+          npm install -g postcss-cli autoprefixer
           mv qrgenerator.min.dev.js assets/js/dist/qrgenerator.min.js
           hugo -b https://qr.swisscovid.ch -d build_prod --cleanDestinationDir --minify
           mv qrgenerator.min.abn.js assets/js/dist/qrgenerator.min.js
           hugo -b https://qr-d.swisscovid.ch -d build_dev --cleanDestinationDir --minify
-          mv qrgenerator.min.abn.js assets/js/dist/qrgenerator.min.js
+          mv qrgenerator.min.prod.js assets/js/dist/qrgenerator.min.js
           hugo -b https://qr-a.swisscovid.ch -d build_abnahme --cleanDestinationDir --minify
         
       - name: Copy .well-known
