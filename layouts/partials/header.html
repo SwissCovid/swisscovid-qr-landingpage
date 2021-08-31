@@ -1,11 +1,11 @@
 <header class="w-full flex-none flex">
-    <div>
+    <div id="header-logo">
         <a href="{{ "/" | relLangURL }}">
             <img src="images/logo.svg" class="inline" alt="Logo" />
             <h4 class="inline">{{ T "app_name" }}</h4>
         </a>
     </div>
-    <div>
+    <div id="language-switcher">
         {{ $siteLanguages := .Site.Languages}}
         {{ $pageLang := .Page.Lang}}
         {{ range .Page.AllTranslations }}
