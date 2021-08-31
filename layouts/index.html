@@ -1,11 +1,16 @@
 {{ define "main" }}
-<div id="landingpage" class="row">
+<div id="landingpage">
     <img src="images/logo.svg" id="landing-logo" alt="">
     <h1 id="landing-title">{{ T "app_name" }}</span></h1>
     <p id="landing-description">
         {{ T "web_slogan" }}
     </p>
-    <div id="store-icons" class="row">
+    <div class="mt-10">
+        <a class="btn-primary" href="{{ "/generate" }}">
+            {{ T "web_generator_generate_button" }}
+        </a>
+    </div>
+    <div id="store-icons">
         <div>
             <a href="https://apps.apple.com/ch/app/swisscovid/id1509275381">
                 <img src="images/app-store-{{ $.Language.Lang}}.svg" alt="">

@@ -1,58 +1,70 @@
 @font-face {
-    font-family: Inter;
-    src: local(Inter-Bold), url(../fonts/Inter-Bold.woff2) format("woff2"),
-        url(../fonts/Inter-Bold.woff) format("woff"),
-        url(../fonts/Inter-Bold.otf) format("opentype");
-    font-weight: 700;
-    font-style: normal;
-    font-stretch: normal;
+  font-family: Inter;
+  src: local(Inter-Bold), url(../fonts/Inter-Bold.woff2) format("woff2"),
+    url(../fonts/Inter-Bold.woff) format("woff"),
+    url(../fonts/Inter-Bold.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
 }
 
 @font-face {
-    font-family: Inter;
-    src: local(Inter-Light), url(../fonts/Inter-Light.woff2) format("woff2"),
-        url(../fonts/Inter-Light.woff) format("woff"),
-        url(../fonts/Inter-Light.otf) format("opentype");
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
+  font-family: Inter;
+  src: local(Inter-Light), url(../fonts/Inter-Light.woff2) format("woff2"),
+    url(../fonts/Inter-Light.woff) format("woff"),
+    url(../fonts/Inter-Light.otf) format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
-    font-family: Inter;
-    font-weight: 300;
-    color: $main;
+  font-size: 1rem;
+  font-family: Inter;
+  font-weight: 300;
+  color: var(--color-main);
 }
 
 h1 {
-    margin: 0;
-    font-family: Inter;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 0.47;
+  margin: 0;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 0.47;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.07;
 }
 
 h4 {
-    margin: 0;
-    font-size: 20;
-    font-weight: 700;
-    line-height: 1.7;
+  margin: 0;
+  font-size: 20;
+  font-weight: 700;
+  line-height: 1.7;
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.38;
-    letter-spacing: 0.4px;
+  line-height: 1.38;
+  letter-spacing: 0.4px;
+  white-space: pre-line;
 }
 
 @media screen and (max-width: $mobile) {
-    h1 {
-        font-size: 28px;
-        line-height: 1.21;
-    }
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.21;
+  }
 
-    p {
-        line-height: 1.5;
-        letter-spacing: normal;
-    }
+  p {
+    line-height: 1.5;
+    letter-spacing: normal;
+  }
 }

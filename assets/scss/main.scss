@@ -1,6 +1,23 @@
-@import "general/variables";
+:root {
+  --color-background: #f7f7f7;
+  --color-main: #4a4969;
+  --color-primary: #5094bf;
+  --color-primary-dark: #4885ac;
+  --color-primary-light: #63a0c7;
+  --color-secondary: #009e89;
+  --color-tertiary: #8d6a9f;
+  --color-grey-light: #eeeeee;
+  --color-white: #ffffff;
+}
+
+$mobile: 600px;
+
+@import "node_modules/tailwindcss/base";
+@import "node_modules/tailwindcss/components";
+@import "node_modules/tailwindcss/utilities";
+
 @import "general/fonts";
+@import "general/components";
 
 @import "partials/header";
 @import "partials/landingpage.scss";
-@import "partials/qrgen.scss";

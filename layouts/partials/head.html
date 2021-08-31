@@ -15,7 +15,7 @@
     <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    {{ $styles := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }} 
+    {{ $styles := resources.Get "scss/main.scss" | toCSS | postCSS (dict "config" "./assets/scss/postcss.config.js") | minify | fingerprint }}
     <link
         rel="stylesheet"
         href="{{ $styles.Permalink }}"

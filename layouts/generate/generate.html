@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{ $qrgenerator := resources.Get "js/dist/qrgenerator.min.js" | fingerprint }}
+<script src="{{ $qrgenerator.RelPermalink }}" integrity="{{ $qrgenerator.Data.Integrity }}"></script>
+<div class="flex flex-col flex-grow justify-center items-center py-16" 
+    style="background: url('images/illu-veranstaltungen.svg') no-repeat; background-position: calc(50% + 21rem) calc(50% + 6rem);">
+    <div id="step-1" class="card">
+        <h2 class="mb-10">{{ T "web_generator_title" }}</h2>
+        <p class="text-center">{{ T "web_generator_message" }}</p>
+        <form id="qr-form" class="pt-8 pb-16">
+            <input placeholder="{{ T "web_generator_title_placeholder" }}" name="title" id="title" type="text"
+                class="text-field" required maxlength="100">
+        </form>
+        <button id="generate-qr-btn" class="btn-primary" disabled>
+            {{ T "web_generator_generate_button" }}
+        </button>
+    </div>
+    <div id="step-2" class="card hidden">
+        <h2 class="mb-8">{{ T "web_generator_success_title" }}</h2>
+        <img src="images/ic-check-filled.svg" class="mb-8" />
+        <a id="download-pdf-btn" class="btn-primary btn-icon w-80 mb-4">
+            <span>{{ T "web_generator_download_pdf_button" }}</span>
+            <img src="images/ic-download.svg" />
+        </a>
+        <button id="print-pdf-btn" class="btn-primary btn-icon w-80 mb-4">
+            <span>{{ T "web_generator_print_pdf_button" }}</span>
+            <img src="images/ic-print.svg" />
+        </button>
+        <button id="reset-btn" class="btn-primary btn-icon w-80">
+            <span>{{ T "web_generator_reset_button" }}</span>
+            <img src="images/ic-qr.svg" />
+        </button>
+    </div>
+</div>
+
+</div>
+{{ end }}

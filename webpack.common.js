@@ -18,7 +18,7 @@ module.exports = (env) => {
             rules: [
                 {
                     test: /\.js$/,
-                    include: [/materialize/, /assets/],
+                    include: [/assets/],
                     use: {
                         loader: "babel-loader",
                         options: {

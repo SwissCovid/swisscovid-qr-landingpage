@@ -48,9 +48,13 @@ def loadLanguage( language, projectID, localesFolder, api_token  ):
         'app_name',
         'web_slogan',
         'web_generator_title',
+        'web_generator_message',
+        'web_generator_success_title',
         'web_generator_title_placeholder',
-        'web_generator_button',
-        'web_generator_download_pdf'
+        'web_generator_generate_button',
+        'web_generator_download_pdf_button',
+        'web_generator_print_pdf_button',
+        'web_generator_reset_button',
     ]
 
     if results['response']['code'] == '200':

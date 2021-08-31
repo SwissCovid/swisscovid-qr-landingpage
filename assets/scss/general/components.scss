@@ -1,0 +1,23 @@
+.btn-primary {
+  @apply bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded cursor-pointer disabled:opacity-20;
+}
+
+.btn-icon {
+  @apply flex flex-row justify-between pr-2;
+
+  & > span {
+    margin: 0 auto;
+  }
+}
+
+.card {
+  @apply flex flex-col justify-center items-center bg-white shadow-lg rounded px-6 py-8 md:px-16 md:py-12;
+}
+
+.card.hidden {
+  display: none;
+}
+
+.text-field {
+  @apply bg-background text-primary-light font-bold rounded px-2 py-1;
+}

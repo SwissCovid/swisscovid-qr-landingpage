@@ -1,12 +1,20 @@
-app_name: 
-    other: "SwissCovid"
-web_generator_title_placeholder: 
-    other: "z.B. Raum oder Anlassname"
-web_slogan: 
-    other: "Bei einem Ansteckungsrisiko schnell informiert."
-web_generator_title: 
-    other: "QR-Code erstellen"
-web_generator_button: 
-    other: "QR-Code erstellen"
-web_generator_download_pdf: 
-    other: "Download PDF"
+app_name:
+  other: "SwissCovid"
+web_generator_title_placeholder:
+  other: "z.B. Raum oder Anlassname"
+web_slogan:
+  other: "Bei einem Ansteckungsrisiko schnell informiert."
+web_generator_title:
+  other: "QR-Code erstellen"
+web_generator_generate_button:
+  other: "QR-Code erstellen"
+web_generator_download_pdf_button:
+  other: "PDF herunterladen"
+web_generator_message:
+  other: "Vergeben Sie einen Titel, der den Ort \noder Ihren Anlass näher beschreibt. \nDieser Titel wird beim Check-in angezeigt."
+web_generator_success_title:
+  other: "QR-Code erstellt"
+web_generator_print_pdf_button:
+  other: "PDF drucken"
+web_generator_reset_button:
+  other: "Neuen QR-Code erstellen"
