@@ -6,7 +6,7 @@
 
 This project requires Hugo 0.78.2 which can be installed from [here](https://gohugo.io/getting-started/installing). **Careful** the extended version is needed for SCSS preprocessing.
 
-Additional dependencies need to be installed using the [yarn package manager](https://yarnpkg.com/) with `yarn install`.
+Additional dependencies need to be installed using the [yarn package manager](https://yarnpkg.com/) with `yarn install:globals; yarn install`.
 
 ### Build Site
 
