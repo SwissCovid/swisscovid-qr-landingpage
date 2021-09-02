@@ -20,4 +20,8 @@
 
 .text-field {
   @apply bg-background text-primary-light font-bold rounded px-2 py-1;
+
+  &::placeholder {
+    @apply font-normal;
+  }
 }
