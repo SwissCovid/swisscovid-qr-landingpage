@@ -16,7 +16,26 @@ body {
 
       #landing-logo {
         width: 140px;
-        height: auto;
+        height: 140px;
+        background: url("../images/appicon.png");
+        background-size: 140px 140px;
+        background-repeat: no;
+      }
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+        #landing-logo {
+          background: url("../images/appicon@2x.png");
+          background-size: 140px 140px;
+        }
+      }
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi) {
+        #landing-logo {
+          background: url("../images/appicon@3x.png");
+          background-size: 140px 140px;
+        }
       }
 
       h1#landing-title {
