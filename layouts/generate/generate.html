@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $qrgenerator := resources.Get "js/dist/qrgenerator.min.js" | fingerprint }}
 <script src="{{ $qrgenerator.RelPermalink }}" integrity="{{ $qrgenerator.Data.Integrity }}"></script>
-<div class="flex flex-col flex-grow justify-center items-center py-16" 
+<div class="flex flex-col flex-grow justify-center items-center py-24" 
     style="background: url('images/illu-veranstaltungen.svg') no-repeat; background-position: calc(50% + 21rem) calc(50% + 6rem);">
     <div id="step-1" class="card">
         <h2 class="mb-10">{{ T "web_generator_title" }}</h2>
