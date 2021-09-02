@@ -63,9 +63,7 @@ const generatePDF = async (qrCode, data) => {
         height: qrCodePng.height,
     });
 
-    const interLight = await asyncInterLight;
     const interBold = await asyncInterBold;
-    const interRegular = await asyncInterRegular;
 
     const publicTitleSize = 24.3;
     const publicTitleWidth = interBold.widthOfTextAtSize(
