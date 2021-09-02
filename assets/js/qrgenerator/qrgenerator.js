@@ -17,10 +17,6 @@ const generateQRCode = async (qrButton) => {
     );
 
     const qrCodeImgValue = `${BASE_URL}#${qrCode}`;
-    const qrCodeImg = await generateSvg(qrCodeImgValue, {
-        width: 161,
-        color: { dark: "#000000" },
-    });
     const pdfBytes = await generatePDF(qrCode, data);
     const blob = new Blob([pdfBytes], { type: "application/pdf" });
     
