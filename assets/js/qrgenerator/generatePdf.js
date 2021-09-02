@@ -44,7 +44,7 @@ const generatePDF = async (qrCode, data) => {
             return pdf.embedFont(buffer);
         });
     const asyncQrCodePng = generateDataURL(`${BASE_URL}#${qrCode}`, {
-        width: 192,
+        width: 326,
         color: { dark: "#000000" },
     }).then(async (url) => {
         await pdfPromise;
@@ -58,7 +58,7 @@ const generatePDF = async (qrCode, data) => {
     const qrCodePng = await asyncQrCodePng;
     qrCodePage.drawImage(qrCodePng, {
         x: qrCodePage.getWidth() / 2 - qrCodePng.width / 2,
-        y: 379,
+        y: 372,
         width: qrCodePng.width,
         height: qrCodePng.height,
     });
@@ -75,7 +75,7 @@ const generatePDF = async (qrCode, data) => {
 
     qrCodePage.drawText(data.title, {
         x: qrCodePage.getWidth() / 2 - publicTitleWidth / 2,
-        y: 279,
+        y: 770,
         size: publicTitleSize,
         font: interBold,
         color: rgb(0, 0, 0),
