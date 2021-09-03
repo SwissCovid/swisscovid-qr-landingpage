@@ -31,7 +31,7 @@ const  generateProtoBufs = async (
 
     let swissCovidLocationData = SwissCovidLocationData.create({
         version: SWISSCOVID_LOCATION_DATA_VERSION,
-        automatichCheckOutDelaylMs: AUTOMATIC_CHECKOUT_DELAY_MS,
+        automaticCheckOutDelaylMs: AUTOMATIC_CHECKOUT_DELAY_MS,
         checkoutWarningDelayMs: CHECKOUT_WARNING_DELAY_MS,
         reminderDelayOptionsMs: REMINDER_DELAY_OPTIONS_MS,
         type: "USER_QR_CODE",
