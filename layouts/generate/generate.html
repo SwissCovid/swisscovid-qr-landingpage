@@ -4,14 +4,14 @@
 <div class="flex flex-col flex-grow justify-center items-center py-24" 
     style="background: url('images/illu-veranstaltungen.svg') no-repeat; background-position: calc(50% + 21rem) calc(50% + 6rem);">
     <div id="step-1" class="card">
-        <h2 class="mb-10">{{ T "web_generator_title" }}</h2>
-        <p class="text-center">{{ T "web_generator_message" }}</p>
+        <h2 class="mb-10">{{ T "checkins_create_qr_code" }}</h2>
+        <p class="text-center">{{ T "checkins_create_qr_code_subtitle" }}</p>
         <form id="qr-form" class="pt-8 pb-16">
             <input placeholder="{{ T "web_generator_title_placeholder" }}" name="title" id="title" type="text"
                 class="text-field w-80" required maxlength="100">
         </form>
         <button id="generate-qr-btn" class="btn-primary" disabled>
-            {{ T "web_generator_generate_button" }}
+            {{ T "checkins_create_qr_code" }}
         </button>
     </div>
     <div id="step-2" class="card hidden">
@@ -22,7 +22,7 @@
             <img src="images/ic-download.svg" />
         </a>
         <button id="print-pdf-btn" class="btn-primary btn-icon w-80 mb-4">
-            <span>{{ T "web_generator_print_pdf_button" }}</span>
+            <span>{{ T "show_pdf_button" }}</span>
             <img src="images/ic-print.svg" />
         </button>
         <button id="reset-btn" class="btn-primary btn-icon w-80">

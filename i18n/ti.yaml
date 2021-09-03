@@ -1,6 +1,12 @@
 app_name: 
     other: "ስዊስኮቪድ"
+checkins_create_qr_code: 
+    other: "QR-ኮድ ምፍጣር"
 web_generator_title_placeholder: 
     other: "ንኣ. ክፍሊ ወይ ቦታ ፍጻሜ"
+show_pdf_button: 
+    other: "PDF ፕሪንት ምግባር"
+checkins_create_qr_code_subtitle: 
+    other: "እቲ ቦታ ወይ ፍጻሜኹም ብቀረባ ዝገልጽ ኣርእስቲ ወይ ስም ሃቡ ኢኹም።\nእዚ ኣርእስቲ ኣብ Check-in ክረአ እዩ።"
 web_slogan: 
     other: "ኣብ ርከሳ ልበዳ ብቕልጡፍ ተሓቢርኩም።"

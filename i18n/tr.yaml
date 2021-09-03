@@ -1,6 +1,12 @@
 app_name: 
     other: "SwissCovid"
+checkins_create_qr_code: 
+    other: "Kare kod oluşturun"
 web_generator_title_placeholder: 
     other: "Örn. Oda veya etkinlik adı"
+show_pdf_button: 
+    other: "PDF yazdır"
+checkins_create_qr_code_subtitle: 
+    other: "Yeri veya etkinliği daha yakından tanımlayan bir başlık belirleyin.\nBu başlık check-in sırasında gösterilir."
 web_slogan: 
     other: "Bir bulaş riski durumunda hızlıca bilgi sahibi olun."

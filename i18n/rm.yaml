@@ -1,6 +1,12 @@
 app_name: 
     other: "SwissCovid"
+checkins_create_qr_code: 
+    other: "Crear in code QR"
 web_generator_title_placeholder: 
     other: "p.ex. stanza u num da l'occurrenza"
+show_pdf_button: 
+    other: "Stampar il PDF"
+checkins_create_qr_code_subtitle: 
+    other: "Tscherni in titel che descriva pli detagliadamain il lieu u Vossa occurrenza. Il titel vegn mussà tar la registraziun."
 web_slogan: 
     other: "Infurmescha svelt en cas d'ina ristga d'infecziun"
