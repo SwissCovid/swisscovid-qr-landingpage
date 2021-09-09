@@ -10,3 +10,9 @@ checkins_create_qr_code_subtitle:
     other: "Enter a title that describes the location or your event in more detail. This title will be displayed on check-in."
 web_slogan: 
     other: "Find out fast if you're at risk of infection."
+web_generator_download_pdf_button: 
+    other: "Download PDF"
+web_generator_success_title: 
+    other: "QR code generated"
+web_generator_reset_button: 
+    other: "Generate new QR code"

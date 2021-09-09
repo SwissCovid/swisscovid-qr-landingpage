@@ -10,3 +10,9 @@ checkins_create_qr_code_subtitle:
     other: "Tscherni in titel che descriva pli detagliadamain il lieu u Vossa occurrenza. Il titel vegn mussà tar la registraziun."
 web_slogan: 
     other: "Infurmescha svelt en cas d'ina ristga d'infecziun"
+web_generator_download_pdf_button: 
+    other: "Chargiar giu il PDF"
+web_generator_success_title: 
+    other: "Il code QR è generà"
+web_generator_reset_button: 
+    other: "Generar in nov code QR"
