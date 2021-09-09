@@ -31,7 +31,7 @@ const  generateProtoBufs = async (
 
     let swissCovidLocationData = SwissCovidLocationData.create({
         version: SWISSCOVID_LOCATION_DATA_VERSION,
-        automaticCheckOutDelaylMs: AUTOMATIC_CHECKOUT_DELAY_MS,
+        automaticCheckoutDelaylMs: AUTOMATIC_CHECKOUT_DELAY_MS,
         checkoutWarningDelayMs: CHECKOUT_WARNING_DELAY_MS,
         reminderDelayOptionsMs: REMINDER_DELAY_OPTIONS_MS,
         type: "USER_QR_CODE",
@@ -41,7 +41,7 @@ const  generateProtoBufs = async (
     let traceLocation = TraceLocation.create({
         version: QR_CODE_VERSION,
         startTimestamp: Math.floor(Date.now() / 1000),
-        endTimestamp: Math.floor(Date.now() + QR_CODE_VALIDITY_DURATION_MS / 1000),
+        endTimestamp: Math.floor((Date.now() + QR_CODE_VALIDITY_DURATION_MS) / 1000),
         description: title,
         address: "",
     });
