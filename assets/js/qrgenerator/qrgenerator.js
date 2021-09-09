@@ -1,6 +1,4 @@
-import strftime from "strftime";
 import generateProtoBufs from "./generateProtoBufs";
-import { generateSvg } from "./generateQrCode";
 import generatePDF from "./generatePdf";
 import printJS from 'print-js';
 
@@ -37,6 +35,7 @@ const generateQRCode = async (qrButton) => {
     const resetBuffon = document.getElementById("reset-btn");
     resetBuffon.onclick = () => {
         document.getElementById("title").value = '';
+        document.getElementById('generate-qr-btn').disabled = true;
         toggleSteps();
     };
     toggleSteps();
