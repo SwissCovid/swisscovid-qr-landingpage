@@ -46,7 +46,14 @@ def loadLanguage( language, projectID, localesFolder, api_token  ):
 
     relevant_terms = [
         'app_name',
-        'web_slogan'
+        'web_slogan',
+        'checkins_create_qr_code',
+        'checkins_create_qr_code_subtitle',
+        'web_generator_success_title',
+        'web_generator_title_placeholder',
+        'web_generator_download_pdf_button',
+        'show_pdf_button',
+        'web_generator_reset_button',
     ]
 
     if results['response']['code'] == '200':

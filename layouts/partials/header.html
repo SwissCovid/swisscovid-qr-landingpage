@@ -1,6 +1,28 @@
-<header>
-    <div>
-        <img src="images/logo.svg" alt="Logo" />
-        <h4>{{ T "app_name" }}</h4>
+<header class="w-full flex-none flex">
+    <div id="header-logo">
+        <a href="{{ "/" | relLangURL }}">
+            <img src="images/appicon.png" class="inline" alt="Logo" />
+            <h4 class="inline">{{ T "app_name" }}</h4>
+        </a>
+    </div>
+    <div id="language-switcher">
+        {{ $siteLanguages := .Site.Languages}}
+        {{ $pageLang := .Page.Lang}}
+        {{ range .Page.AllTranslations }}
+            {{ $translation := .}}
+            {{ $len := (len $siteLanguages) }}
+            {{ range $index, $element := $siteLanguages }}
+                {{ if eq $translation.Lang .Lang }}
+                  {{ $selected := false }}
+                  {{ if eq $pageLang .Lang}}
+                      <a href="{{ $translation.RelPermalink }}" class="mx-2 hover:underline font-bold">{{ .LanguageName }}</a> 
+                      {{ if ne (add $index 1) $len }}|{{ end }}
+                  {{ else }}
+                      <a href="{{ $translation.RelPermalink }}" class="mx-2 hover:underline ">{{ .LanguageName }}</a>
+                      {{ if ne (add $index 1) $len }}|{{ end }}
+                  {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
     </div>
 </header>

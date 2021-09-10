@@ -1,4 +1,18 @@
 app_name: 
     other: "SwissCovid"
+checkins_create_qr_code: 
+    other: "QR-Code erstellen"
+web_generator_title_placeholder: 
+    other: "z.B. Raum oder Anlassname"
+show_pdf_button: 
+    other: "PDF drucken"
+checkins_create_qr_code_subtitle: 
+    other: "Vergeben Sie einen Titel, der den Ort oder Ihren Anlass näher beschreibt.\nDieser Titel wird beim Check-in angezeigt."
 web_slogan: 
     other: "Bei einem Ansteckungsrisiko schnell informiert."
+web_generator_download_pdf_button: 
+    other: "PDF herunterladen"
+web_generator_success_title: 
+    other: "QR-Code erstellt"
+web_generator_reset_button: 
+    other: "Neuen QR-Code erstellen"

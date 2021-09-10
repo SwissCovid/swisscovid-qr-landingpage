@@ -1,4 +1,12 @@
 app_name: 
     other: "SwissCovid"
+checkins_create_qr_code: 
+    other: "Napraviti QR kod"
+web_generator_title_placeholder: 
+    other: "npr. soba ili naziv događaja"
+show_pdf_button: 
+    other: "Odštampati PDF"
+checkins_create_qr_code_subtitle: 
+    other: "Dodelite naziv, koji detaljnije opisuje lokaciju ili vaš događaj.                                            Ovaj naziv će biti prikazan prilikom prijave."
 web_slogan: 
     other: "Brze informacije u slučaju rizika od zaraze. "

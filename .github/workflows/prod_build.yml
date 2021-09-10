@@ -12,7 +12,20 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: false
-          fetch-depth: 0 
+          fetch-depth: 0
+
+      - name: Build JS
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - run: |
+          yarn install
+          yarn build:dev:js
+          mv assets/js/dist/qrgenerator.min.js qrgenerator.min.dev.js
+          yarn build:abn:js
+          mv assets/js/dist/qrgenerator.min.js qrgenerator.min.abn.js
+          yarn build:prod:js
+          mv assets/js/dist/qrgenerator.min.js qrgenerator.min.prod.js
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -22,23 +35,24 @@ jobs:
 
       - name: Build
         run: |
-          hugo -b https://qr.swisscovid.ch -d build_prod --cleanDestinationDir --minify
+          npm install -g postcss-cli autoprefixer
+          mv qrgenerator.min.dev.js assets/js/dist/qrgenerator.min.js
           hugo -b https://qr-d.swisscovid.ch -d build_dev --cleanDestinationDir --minify
-          hugo -b https://qr-t.swisscovid.ch -d build_test --cleanDestinationDir --minify
+          mv qrgenerator.min.abn.js assets/js/dist/qrgenerator.min.js
           hugo -b https://qr-a.swisscovid.ch -d build_abnahme --cleanDestinationDir --minify
+          mv qrgenerator.min.prod.js assets/js/dist/qrgenerator.min.js
+          hugo -b https://qr.swisscovid.ch -d build_prod --cleanDestinationDir --minify
         
       - name: Copy .well-known
         run: |
           cp -R .well-known/prod/.well-known build_prod
           cp -R .well-known/dev/.well-known build_dev
-          cp -R .well-known/test/.well-known build_test
           cp -R .well-known/abnahme/.well-known build_abnahme
 
       - name: Zip Build Directories
         run: |
           (cd build_prod && zip -r ../prod.zip .)
           (cd build_dev && zip -r ../dev.zip .)
-          (cd build_test && zip -r ../test.zip .)
           (cd build_abnahme && zip -r ../abnahme.zip .)
 
       - name: "Create new release"
@@ -49,5 +63,4 @@ jobs:
           files: |
             prod.zip
             dev.zip
-            test.zip
             abnahme.zip
