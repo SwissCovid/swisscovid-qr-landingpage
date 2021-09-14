@@ -1,15 +1,3 @@
-export const disableButton = (button, showPreloader = true) => {
-    button.classList.add("disabled");
-    button.getElementsByClassName("preloader-wrapper")[0].style.display =
-        showPreloader ? "block" : "none";
-};
-
-export const enableButton = (button) => {
-    button.classList.remove("disabled");
-    button.getElementsByClassName("preloader-wrapper")[0].style.display =
-        "none";
-};
-
 export const ready = (fn) => {
     if (document.readyState != "loading") {
         fn();
@@ -17,3 +5,8 @@ export const ready = (fn) => {
         document.addEventListener("DOMContentLoaded", fn);
     }
 };
+
+export const isSafari = () => {
+    return Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 ||
+        navigator.userAgent.toLowerCase().indexOf('safari') !== -1
+}    

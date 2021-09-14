@@ -1,6 +1,7 @@
 import generateProtoBufs from "./generateProtoBufs";
 import generatePDF from "./generatePdf";
 import printJS from 'print-js';
+import { isSafari } from "../utils/utils";
 
 const generateQRCode = async (qrButton) => {
 
@@ -24,7 +25,11 @@ const generateQRCode = async (qrButton) => {
     
     const printBuffon = document.getElementById("print-pdf-btn");
     printBuffon.onclick = () => {
-        printJS(window.URL.createObjectURL(blob))
+        if (isSafari()) { 
+            window.open(URL.createObjectURL(blob));
+        } else {
+            printJS(window.URL.createObjectURL(blob))
+        }
     };
     
     const toggleSteps = () => {
