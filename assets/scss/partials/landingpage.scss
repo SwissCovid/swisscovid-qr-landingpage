@@ -6,13 +6,15 @@ body {
     min-height: 100vh;
 
     #landingpage {
+      position: absolute;
+      top: 1.5rem;
+      width: 100%;
       text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: calc(100vh - 82px);
-      padding: 72px 0;
 
       #landing-logo {
         width: 140px;
