@@ -10,3 +10,9 @@ checkins_create_qr_code_subtitle:
     other: "Jepni një titull që e përshkruan më afër vendin ose arsyen tuaj.\nKy titull shfaqet gjatë Check-in."
 web_slogan: 
     other: "Në rastin e një rreziku të infektimit informoheni shpejt."
+web_generator_download_pdf_button: 
+    other: "Shkarkoni PDF"
+web_generator_success_title: 
+    other: "Kodi i krijuar QR"
+web_generator_reset_button: 
+    other: "Krijoni kodin e ri QR"

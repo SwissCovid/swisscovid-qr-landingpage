@@ -10,3 +10,9 @@ checkins_create_qr_code_subtitle:
     other: "Dodelite naziv, koji detaljnije opisuje lokaciju ili vaš događaj.                                            Ovaj naziv će biti prikazan prilikom prijave."
 web_slogan: 
     other: "Brze informacije u slučaju rizika od zaraze. "
+web_generator_download_pdf_button: 
+    other: "Skini PDF"
+web_generator_success_title: 
+    other: "QR kod je izrađen"
+web_generator_reset_button: 
+    other: "Izradi novi QR kod"
