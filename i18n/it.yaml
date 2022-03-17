@@ -16,3 +16,7 @@ web_generator_success_title:
     other: "Codice QR creato"
 web_generator_reset_button: 
     other: "Crea nuovo codice QR"
+termination_text: 
+    other: "Grazie per aver scaricato l'app SwissCovid.\n\nUtilizzando l'app SwissCovid hai fornito un contributo rilevante alla lotta alla pandemia. Oltre 175 000 persone hanno potuto informare gli altri rapidamente di un rischio di contagio, interrompendo così le catene di infezione.\n\nCon l'abrogazione dei provvedimenti della Confederazione, anche il funzionamento dell'app SwissCovid è stato sospeso. L'app è inattiva da subito e deve essere disinstallata. Se la situazione epidemiologica dovesse rendere necessaria una riattivazione, saremmo lieti di poter contare nuovamente sul tuo sostegno."
+termination_link_title: 
+    other: "Ulteriori informazioni"
