@@ -16,3 +16,9 @@ web_generator_success_title:
     other: "Il code QR è generà"
 web_generator_reset_button: 
     other: "Generar in nov code QR"
+termination_text: 
+    other: "Grazia fitg che Vus avais chargià giu l'app SwissCovid.\n\nCun duvrar l'app SwissCovid avais Vus prestà ina contribuziun impurtanta en il cumbat cunter la pandemia. Passa 200 000 persunas han pudì infurmar autras persunas davart ina ristga d'infecziun ed han uschia pudì interrumper chadainas d'infecziun.\n\nCun l'aboliziun da las mesiras da la Confederaziun è er vegnì terminà il manaschi da l'app SwissCovid. L'app è per immediat inactiva e duai vegnir deinstallada. Sch'ella stuess puspè vegnir activada causa la situaziun epidemiologica, ans legrassan nus puspè da Voss sustegn."
+termination_link_title: 
+    other: "Ulteriuras infurmaziuns"
+termination_url: 
+    other: "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/swisscovid-app-und-contact-tracing.html"

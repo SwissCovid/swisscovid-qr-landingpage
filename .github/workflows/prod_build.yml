@@ -35,7 +35,7 @@ jobs:
 
       - name: Build
         run: |
-          npm install -g postcss-cli autoprefixer
+          npm install -g postcss-cli autoprefixer postcss
           mv qrgenerator.min.dev.js assets/js/dist/qrgenerator.min.js
           hugo -b https://qr-d.swisscovid.ch -d build_dev --cleanDestinationDir --minify
           mv qrgenerator.min.abn.js assets/js/dist/qrgenerator.min.js

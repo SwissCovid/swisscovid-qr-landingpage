@@ -1,36 +1,46 @@
 {{ define "main" }}
-{{ $qrgenerator := resources.Get "js/dist/qrgenerator.min.js" | fingerprint }}
-<script src="{{ $qrgenerator.RelPermalink }}"></script>
-<div class="flex flex-col flex-grow justify-center items-center py-24" 
-    style="background: url('images/illu-veranstaltungen.svg') no-repeat; background-position: calc(50% + 21rem) calc(50% + 6rem);">
-    <div id="step-1" class="card">
-        <h2 class="mb-10">{{ T "checkins_create_qr_code" }}</h2>
-        <p class="text-center">{{ T "checkins_create_qr_code_subtitle" }}</p>
-        <form id="qr-form" class="pt-8 pb-16">
-            <input placeholder="{{ T "web_generator_title_placeholder" }}" name="title" id="title" type="text"
-                class="text-field w-80" required maxlength="100">
-        </form>
-        <button id="generate-qr-btn" class="btn-primary" disabled>
-            {{ T "checkins_create_qr_code" }}
-        </button>
-    </div>
-    <div id="step-2" class="card hidden">
-        <h2 class="mb-8">{{ T "web_generator_success_title" }}</h2>
-        <img src="images/ic-check-filled.svg" class="mb-8" />
-        <a id="download-pdf-btn" class="btn-primary btn-icon w-80 mb-4">
-            <span>{{ T "web_generator_download_pdf_button" }}</span>
-            <img src="images/ic-download.svg" />
-        </a>
-        <button id="print-pdf-btn" class="btn-primary btn-icon w-80 mb-4">
-            <span>{{ T "show_pdf_button" }}</span>
-            <img src="images/ic-print.svg" />
-        </button>
-        <button id="reset-btn" class="btn-primary btn-icon w-80">
-            <span>{{ T "web_generator_reset_button" }}</span>
-            <img src="images/ic-qr.svg" />
-        </button>
-    </div>
-</div>
+<head>
+    <title>{{ T "app_name"}}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Get The App | SwissCovid" />
+    <base href="{{ .Site.BaseURL }}" />
 
-</div>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="refresh" content="0; url={{ .Site.BaseURL }}">
+
+    {{ $styles := resources.Get "scss/main.scss" | toCSS | postCSS (dict "config" "./assets/scss/postcss.config.js") | minify | fingerprint }}
+    <link
+            rel="stylesheet"
+            href="{{ $styles.Permalink }}"
+            integrity="{{ $styles.Data.Integrity }}"
+            media="screen"
+    />
+
+    <script>
+        window.currentLanguage = {
+            shortcode: "{{ .Site.Language.Lang }}",
+            appStoreLink: '{{ T "landing_appstore_link" }}',
+            playStoreLink: '{{ T "landing_playstore_link" }}',
+            downloadPdf: '{{ T "web_generator_download_pdf" }}'
+        };
+    </script>
+
+    {{ $main := resources.Get "js/main.js" | js.Build (dict "minify" true "target" "es5") | fingerprint}}
+
+    <script
+            type="text/javascript"
+            src="{{ $main.Permalink }}"
+            integrity="{{ $main.Data.Integrity }}"
+    ></script>
+</head>
+
 {{ end }}

@@ -10,3 +10,15 @@ checkins_create_qr_code_subtitle:
     other: "እቲ ቦታ ወይ ፍጻሜኹም ብቀረባ ዝገልጽ ኣርእስቲ ወይ ስም ሃቡ ኢኹም።\nእዚ ኣርእስቲ ኣብ Check-in ክረአ እዩ።"
 web_slogan: 
     other: "ኣብ ርከሳ ልበዳ ብቕልጡፍ ተሓቢርኩም።"
+web_generator_download_pdf_button: 
+    other: "PDF ኣራግፍ"
+web_generator_success_title: 
+    other: "ኮድ QR ተፈጢሩ"
+web_generator_reset_button: 
+    other: "ሓድሽ ኮድ QR ምፍጣር"
+termination_text: 
+    other: "ነቲ ስዊዝኮቪድ ዚብሃል ኣፕሊኬሽን ስለ ዘራገፍኩምልና (ዳውንሎውድ ብምግባርኩም) አመስግነኩም።\n\nነቲ ስዊዝኮቪድ ዚብሃል ኣፕሊኬሽን ተጠቒምካ ነዚ ለብዒ እዚ ንምቅላስ ኣገዳሲ ኣበርክቶ ጌርካ ኢኻ። ልዕሊ 200,000 ዝዀኑ ሰባት ንኻልኦት ሰባት ብዛዕባ እቲ ኼጋጥም ዚኽእል ረኽሲ ቐልጢፎም ኪነግርዎም ንሰንሰለት እቲ ረኽሲ ድማ ኬቋርጽዎ ኽኢሎም እዮም።\n\nእቲ ፈደራላዊ መንግስቲ ዝወሰዶ ስጕምትታት ምስ ተደምሰሰ ኣሰራርሓ እቲ ስዊዝኮቪድ ዚብሃል ኣፕሊኬሽን እውን ተቛረጸ። እቲ ኣፕሊኬሽን ብኡንብኡ ዘይንጡፍ ስለ ዝዀነ ኪቕመጥ ኣለዎ። ብሰንኪ እቲ ለብዒ እንደገና ምላሽ ምሃብ ኣድላዪ እንተ ዀይኑ እንደገና ደገፍካ ኽንረክብ ሕጉሳት ኢና ።"
+termination_link_title: 
+    other: "ዝያዳ ሓበሬታ"
+termination_url: 
+    other: "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/swisscovid-app-und-contact-tracing.html"

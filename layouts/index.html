@@ -4,25 +4,13 @@
         <div style="width: 140px; height: 140px;"></div>
     </div>
     <h1 id="landing-title">{{ T "app_name" }}</span></h1>
-    <p id="landing-description">
-        {{ T "web_slogan" }}
+    <p id="landing-description" style="margin-bottom: 1px">
+        {{ T "termination_text" }}
     </p>
     <div class="mt-10">
-        <a class="btn-primary" href="{{ "/generate" | relLangURL }}">
-            {{ T "checkins_create_qr_code" }}
+        <a class="btn-primary" href="{{ T "termination_url" }}/">
+        {{ T "termination_link_title" }}
         </a>
-    </div>
-    <div id="store-icons">
-        <div>
-            <a href="https://apps.apple.com/ch/app/swisscovid/id1509275381">
-                <img src="images/app-store-{{ $.Language.Lang}}.svg" alt="">
-            </a>
-        </div>
-        <div>
-            <a href="https://play.google.com/store/apps/details?id=ch.admin.bag.dp3t">
-                <img src="images/play-store-{{ $.Language.Lang}}.svg" alt="">
-            </a>
-        </div>
     </div>
 </div>
 {{ end }}

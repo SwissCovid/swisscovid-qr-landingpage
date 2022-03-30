@@ -10,3 +10,15 @@ checkins_create_qr_code_subtitle:
     other: "Dê um título que descreve o lugar ou o seu evento.\nEste título vai ser indicado no check-in."
 web_slogan: 
     other: "Informação rápida em caso de risco de infeção"
+web_generator_download_pdf_button: 
+    other: "Baixar o PDF"
+web_generator_success_title: 
+    other: "Criou um código QR"
+web_generator_reset_button: 
+    other: "Criar um novo código QR"
+termination_text: 
+    other: "Agradecemos ter baixado o aplicativo SwissCovid.\n\nCom a utilização do aplicativo você prestou um contributo relevante para o combate à pandemia. Mais de 200.000 pessoas puderam informar outros rapidamente sobre um risco de contágio e interromper as cadeias de infeção.\n\nCom a revogação das medidas da Confederação, a operação do aplicativo SwissCovid também cessou. A partir de agora, o aplicativo é inativo e deve ser desinstalado. Se uma reativação for necessária devido à situação epidemiológica, seríamos muito grato pela sua ajuda."
+termination_link_title: 
+    other: "Mais informações"
+termination_url: 
+    other: "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/swisscovid-app-und-contact-tracing.html"
