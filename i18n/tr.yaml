@@ -17,6 +17,8 @@ web_generator_success_title:
 web_generator_reset_button: 
     other: "Yeni kare kod oluştur"
 termination_text: 
-    other: "SwissCovid uygulamasını yüklediğiniz için çok teşekkür ederiz.\n\nSwissCovid uygulamasını kullanmakla pandemiyle mücadeleye önemli bir katkı sağlamış oldunuz. Sayıları 175’000'i geçen kişi bulaşma riski konusunda diğerlerini hızlı bir şekilde bilgilendirme imkânına sahip oldu ve dolayısıyla enfeksiyon zincirini kesintiye uğratabildi.\n\nFederal resmi makamların önlemleri kaldırmasıyla birlikte SwissCovid uygulaması da devre dışı bırakıldı. Bu uygulama şu andan itibaren aktif durumda değildir ve silinmesi gerekmektedir. Epidemiyolojik durum bunun yeniden aktif hale getirilmesini gerekli kılarsa yine destek sağlamanıza seviniriz."
+    other: "SwissCovid uygulamasını yüklediğiniz için çok teşekkür ederiz.\n\nSwissCovid uygulamasını kullanmakla pandemiyle mücadeleye önemli bir katkı sağlamış oldunuz. Sayıları 200’000'i geçen kişi bulaşma riski konusunda diğerlerini hızlı bir şekilde bilgilendirme imkânına sahip oldu ve dolayısıyla enfeksiyon zincirini kesintiye uğratabildi.\n\nFederal resmi makamların önlemleri kaldırmasıyla birlikte SwissCovid uygulaması da devre dışı bırakıldı. Bu uygulama şu andan itibaren aktif durumda değildir ve silinmesi gerekmektedir. Epidemiyolojik durum bunun yeniden aktif hale getirilmesini gerekli kılarsa yine destek sağlamanıza seviniriz."
 termination_link_title: 
     other: "Daha fazla bilgi"
+termination_url: 
+    other: "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/swisscovid-app-und-contact-tracing.html"

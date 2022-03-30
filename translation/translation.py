@@ -56,6 +56,7 @@ def loadLanguage( language, projectID, localesFolder, api_token  ):
         'web_generator_reset_button',
         'termination_text',
         'termination_link_title',
+        'termination_url'
     ]
 
     if results['response']['code'] == '200':

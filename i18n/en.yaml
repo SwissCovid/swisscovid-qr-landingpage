@@ -17,6 +17,8 @@ web_generator_success_title:
 web_generator_reset_button: 
     other: "Generate new QR code"
 termination_text: 
-    other: "Thank you for downloading the SwissCovid app.\n\nYou have made an important contribution to fighting the pandemic by using the SwissCovid app. More than 175,000 people were able to break the transmission chain by quickly informing others of the risk of infection.\n\nThe SwissCovid app was discontinued when the federal government's other measures were lifted. The app is now inactive and you should delete it. We hope we can count on your support again if the epidemiological situation should require its reactivation in the future."
+    other: "Thank you for downloading the SwissCovid app.\n\nYou have made an important contribution to fighting the pandemic by using the SwissCovid app. More than 200,000 people were able to break the transmission chain by quickly informing others of the risk of infection.\n\nThe SwissCovid app was discontinued when the federal government's other measures were lifted. The app is now inactive and you should delete it. We hope we can count on your support again if the epidemiological situation should require its reactivation in the future."
 termination_link_title: 
     other: "Further information"
+termination_url: 
+    other: "https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/swisscovid-app-und-contact-tracing.html"

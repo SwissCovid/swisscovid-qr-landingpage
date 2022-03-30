@@ -17,6 +17,8 @@ web_generator_success_title:
 web_generator_reset_button: 
     other: "Krijoni kodin e ri QR"
 termination_text: 
-    other: "Faleminderit shumë, që ju e keni shkarkuar aplikacionin “SwissCovid”.\n\nMe përdorimin e aplikacionin “SwissCovid” ju keni dhënë një kontribut të spikatshëm për luftimin e pandemisë. Mbi 175’000 persona mundën të informonin shpejt të tjerët mbi një rrezik infektimi dhe të ndërprisnin me këtë zinxhirin e infektimit.\n\nMe shfuqizimin e masave të federatës u ndërpre edhe funksionimi i aplikacionit “SwissCovid”. Aplikacioni është menjëherë joveprues dhe duhet të deinstalohet. Nëse për shkak të situatës epidemiologjike do të jetë i nevojshëm një riaktivizim, ne do të gëzoheshim përsëri për mbështetjen tuaj."
+    other: "Faleminderit shumë, që ju e keni shkarkuar aplikacionin “SwissCovid”.\n\nMe përdorimin e aplikacionin “SwissCovid” ju keni dhënë një kontribut të spikatshëm për luftimin e pandemisë. Mbi 200’000 persona mundën të informonin shpejt të tjerët mbi një rrezik infektimi dhe të ndërprisnin me këtë zinxhirin e infektimit.\n\nMe shfuqizimin e masave të federatës u ndërpre edhe funksionimi i aplikacionit “SwissCovid”. Aplikacioni është menjëherë joveprues dhe duhet të deinstalohet. Nëse për shkak të situatës epidemiologjike do të jetë i nevojshëm një riaktivizim, ne do të gëzoheshim përsëri për mbështetjen tuaj."
 termination_link_title: 
     other: "Informacione të tjera"
+termination_url: 
+    other: "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/swisscovid-app-und-contact-tracing.html"
